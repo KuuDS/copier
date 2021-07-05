@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:copier.sqlite
+    username: sa
+    password: sa
+    hikari:
+      driver-class-name: org.sqlite.JDBC
+  jpa:
+    properties:
+      hibernate:
+        dialect: me.kuuds.copier.conf.SqliteDialect
